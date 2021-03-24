@@ -8,8 +8,41 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
      <link rel='stylesheet' type='text/css' href='./assets/js/css/style.css' />
   </head>
-  <body>
-   <header>
+  
+  <div id="controls">
+    <div id="info">
+      <button id="scores" href="">View High Scores</button>
+      <div id="timer"><p>Time: <span id="time">0</span></p></div>
+    </div>
+  </div>  
 
-   </header>    
+  <div id="positionWrapper">
+    <section id="intro">
+      <h1>Coding Quiz Challenge</h1>
+      <p>Try to answer the following code-related questions within the time limit.
+        Keep in mind that incorrect answers will penalize your score/time by ten seconds.
+      </p>
+      <button>Start Quiz</button>
+    </section>
+
+    <section id="quizHolder" class="hide">
+        <p id="title"></p>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+        <div id="scoreIndicator" class="invisible">
+          <p>&nbsp;</p>
+        </div>
+      </section>
+    
+      <section id="highScores" class="hide">
+        <h1>High Scores</h1>
+        <div>
+    
+        </div>
+        <button id="reset">Go Back</button> <button id="clearScores">Clear Highscores</button>
+      </section>
+    </div>
+
 </html>
